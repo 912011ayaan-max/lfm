@@ -6,32 +6,32 @@
 
 @layer base {
   :root {
-    /* Crescent School Theme - Green, Gold, White - Modern Educational */
-    --background: 48 30% 97%;
-    --foreground: 150 40% 12%;
+    /* Luanda Montessori Theme - Deep Blue, Teal, White - Modern Educational */
+    --background: 0 0% 98%;
+    --foreground: 220 40% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 150 40% 12%;
+    --card-foreground: 220 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 150 40% 12%;
+    --popover-foreground: 220 40% 15%;
 
-    --primary: 152 55% 28%;
-    --primary-foreground: 48 30% 97%;
+    --primary: 201 76% 42%;  /* Deep Blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 43 85% 52%;
-    --secondary-foreground: 150 40% 12%;
+    --secondary: 172 53% 52%;  /* Teal */
+    --secondary-foreground: 220 40% 15%;
 
-    --muted: 48 25% 93%;
-    --muted-foreground: 150 20% 40%;
+    --muted: 200 20% 96%;
+    --muted-foreground: 220 15% 50%;
 
-    --accent: 43 95% 58%;
-    --accent-foreground: 150 40% 12%;
+    --accent: 201 76% 52%;  /* Lighter Blue */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 72% 51%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --success: 142 70% 45%;
+    --success: 160 84% 39%;
     --success-foreground: 0 0% 100%;
 
     --warning: 38 92% 50%;
@@ -40,64 +40,65 @@
     --info: 199 89% 48%;
     --info-foreground: 0 0% 100%;
 
-    --border: 150 15% 88%;
-    --input: 150 15% 88%;
-    --ring: 152 55% 28%;
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 201 76% 42%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
     /* Custom Colors */
-    --gold: 43 85% 52%;
-    --gold-light: 43 75% 72%;
-    --gold-dark: 43 90% 38%;
-    --green-dark: 152 65% 18%;
-    --green-light: 152 45% 42%;
-    --cream: 48 30% 97%;
-    --emerald: 152 55% 28%;
+    --blue: 201 76% 42%;
+    --blue-light: 201 76% 52%;
+    --blue-dark: 201 76% 32%;
+    --teal: 172 53% 42%;
+    --teal-light: 172 53% 62%;
+    --cream: 0 0% 98%;
+    --navy: 220 40% 15%;
 
     /* Glass Effects */
-    --glass-bg: 0 0% 100% / 0.7;
+    --glass-bg: 0 0% 100% / 0.8;
     --glass-border: 0 0% 100% / 0.3;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(152 55% 28%) 0%, hsl(152 65% 18%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(43 95% 58%) 0%, hsl(43 85% 52%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(48 30% 97%) 0%, hsl(48 25% 93%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(48 30% 97%) 100%);
-    --gradient-success: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(152 55% 28%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(43 85% 52%) 0%, hsl(25 95% 53%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(201 76% 42%) 0%, hsl(220 40% 15%) 100%);
+    --gradient-teal: linear-gradient(135deg, hsl(172 53% 52%) 0%, hsl(172 53% 42%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(200 20% 96%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(200 20% 98%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(172 53% 42%) 100%);
+    --gradient-cool: linear-gradient(135deg, hsl(201 76% 42%) 0%, hsl(172 53% 52%) 100%);
 
     /* Shadows */
-    --shadow-xs: 0 1px 2px hsl(152 55% 28% / 0.04);
-    --shadow-sm: 0 2px 8px hsl(152 55% 28% / 0.06);
-    --shadow-md: 0 4px 16px hsl(152 55% 28% / 0.08);
-    --shadow-lg: 0 8px 32px hsl(152 55% 28% / 0.12);
-    --shadow-xl: 0 16px 48px hsl(152 55% 28% / 0.16);
-    --shadow-gold: 0 4px 24px hsl(43 85% 52% / 0.35);
-    --shadow-glow: 0 0 40px hsl(152 55% 28% / 0.2);
-    --shadow-inner: inset 0 2px 4px hsl(152 55% 28% / 0.06);
+    --shadow-xs: 0 1px 2px hsl(220 40% 15% / 0.04);
+    --shadow-sm: 0 2px 8px hsl(220 40% 15% / 0.05);
+    --shadow-md: 0 4px 16px hsl(220 40% 15% / 0.08);
+    --shadow-lg: 0 8px 32px hsl(220 40% 15% / 0.12);
+    --shadow-xl: 0 16px 48px hsl(220 40% 15% / 0.15);
+    --shadow-teal: 0 4px 24px hsl(172 53% 52% / 0.25);
+    --shadow-glow: 0 0 40px hsl(201 76% 42% / 0.15);
+    --shadow-inner: inset 0 2px 4px hsl(220 40% 15% / 0.05);
 
-    --sidebar-background: 152 55% 28%;
-    --sidebar-foreground: 48 30% 97%;
-    --sidebar-primary: 43 85% 52%;
-    --sidebar-primary-foreground: 150 40% 12%;
-    --sidebar-accent: 152 50% 35%;
-    --sidebar-accent-foreground: 48 30% 97%;
-    --sidebar-border: 152 50% 35%;
-    --sidebar-ring: 43 85% 52%;
+    /* Sidebar */
+    --sidebar-background: 220 40% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 172 53% 52%;
+    --sidebar-primary-foreground: 220 40% 15%;
+    --sidebar-accent: 201 76% 42%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 100% / 0.1;
+    --sidebar-ring: 172 53% 52%;
   }
 
   .dark {
-    --background: 152 45% 6%;
-    --foreground: 48 30% 95%;
+    --background: 220 40% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 152 40% 10%;
-    --card-foreground: 48 30% 95%;
+    --card: 220 40% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 152 40% 10%;
-    --popover-foreground: 48 30% 95%;
+    --popover: 220 40% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 43 85% 52%;
+    --primary: 172 53% 52%;
     --primary-foreground: 152 45% 6%;
 
     --secondary: 152 35% 18%;

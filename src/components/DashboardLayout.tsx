@@ -19,7 +19,12 @@ import {
   Settings,
   BarChart3,
   Clock,
-  MessageSquare
+  MessageSquare,
+  BookOpenCheck,
+  BookMarked,
+  School,
+  UserCog,
+  BookCheck
 } from 'lucide-react';
 
 interface NavItem {
@@ -120,21 +125,21 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, currentPage
   });
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-background to-muted/20">
       {/* Mobile Header */}
-      <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-xl border-b border-border px-4 py-3 flex items-center justify-between shadow-elegant">
+      <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-xl border-b border-border/50 px-4 py-3 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-3">
           <div className="relative">
-            <div className="absolute inset-0 bg-secondary/30 rounded-full blur-md"></div>
+            <div className="absolute inset-0 bg-primary/20 rounded-xl blur-md"></div>
             <img 
               src={schoolLogo} 
               alt="Luanda Future Montessori" 
-              className="relative w-10 h-10 object-contain rounded-full border-2 border-secondary"
+              className="relative w-10 h-10 object-contain rounded-lg border-2 border-primary/50"
             />
           </div>
           <div>
-            <h1 className="font-display font-bold text-lg text-foreground">Luanda Future</h1>
-            <p className="text-xs text-muted-foreground">Montessori Portal</p>
+            <h1 className="font-display font-bold text-lg bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Luanda Future</h1>
+            <p className="text-xs text-muted-foreground font-medium">Montessori Portal</p>
           </div>
         </div>
         <Button 
@@ -212,26 +217,28 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, currentPage
 
       <div className="flex">
         {/* Desktop Sidebar */}
-        <aside className={`hidden lg:flex flex-col fixed left-0 top-0 bottom-0 z-40 bg-gradient-primary transition-all duration-300 ${
-          sidebarCollapsed ? 'w-20' : 'w-72'
-        }`}>
+        <aside 
+          className={`hidden lg:flex flex-col fixed left-0 top-0 bottom-0 z-40 bg-gradient-to-b from-sidebar to-sidebar-accent/30 backdrop-blur-lg transition-all duration-300 border-r border-sidebar-border/50 ${
+            sidebarCollapsed ? 'w-20' : 'w-72'
+          }`}
+        >
           {/* Logo Section */}
           <div className="p-5 border-b border-sidebar-border/30">
             <div className="flex items-center gap-4">
               <div className="relative flex-shrink-0">
-                <div className="absolute inset-0 bg-secondary/40 rounded-full blur-md"></div>
+                <div className="absolute inset-0 bg-primary/30 rounded-lg blur-md"></div>
                 <img 
                   src={schoolLogo} 
                   alt="Luanda Future Montessori" 
-                  className="relative w-12 h-12 object-contain rounded-full border-2 border-secondary shadow-gold"
+                  className="relative w-12 h-12 object-contain rounded-lg border-2 border-primary/50"
                 />
               </div>
               {!sidebarCollapsed && (
-                <div className="animate-fade-in">
-                  <h1 className="font-display font-bold text-xl text-sidebar-foreground leading-tight">
+                <div className="animate-fade-in overflow-hidden">
+                  <h1 className="font-display font-bold text-xl bg-gradient-to-r from-sidebar-foreground to-sidebar-foreground/80 bg-clip-text text-transparent">
                     Luanda Future
                   </h1>
-                  <p className="text-xs text-sidebar-foreground/60">Montessori Portal</p>
+                  <p className="text-xs text-sidebar-foreground/70 font-medium">Montessori Portal</p>
                 </div>
               )}
             </div>
