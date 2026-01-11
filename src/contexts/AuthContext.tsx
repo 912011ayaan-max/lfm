@@ -27,7 +27,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   useEffect(() => {
     // Check for saved session
-    const savedUser = localStorage.getItem('crescentUser');
+    const savedUser = localStorage.getItem('luandaUser');
     if (savedUser) {
       setUser(JSON.parse(savedUser));
     }
@@ -49,7 +49,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
           role: 'admin'
         };
         setUser(userData);
-        localStorage.setItem('crescentUser', JSON.stringify(userData));
+        localStorage.setItem('luandaUser', JSON.stringify(userData));
         return { success: true };
       }
 
@@ -65,7 +65,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
               role: 'teacher'
             };
             setUser(userData);
-            localStorage.setItem('crescentUser', JSON.stringify(userData));
+            localStorage.setItem('luandaUser', JSON.stringify(userData));
             return { success: true };
           }
         }
@@ -85,7 +85,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
               className: student.className
             };
             setUser(userData);
-            localStorage.setItem('crescentUser', JSON.stringify(userData));
+            localStorage.setItem('luandaUser', JSON.stringify(userData));
             return { success: true };
           }
         }
@@ -100,7 +100,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('crescentUser');
+    localStorage.removeItem('luandaUser');
   };
 
   return (

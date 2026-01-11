@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { initializeAdmin } from '@/lib/firebase';
-import crescentLogo from '@/assets/crescent-logo.jpg';
+import luandaLogo from '@/assets/luanda-logo.jpg';
 import { User, GraduationCap, Shield, Eye, EyeOff, Sparkles, BookOpen, Users } from 'lucide-react';
 
 const LoginPage: React.FC = () => {
@@ -46,7 +46,7 @@ const LoginPage: React.FC = () => {
     } else {
       toast({
         title: "Welcome!",
-        description: "Successfully logged in to Crescent School Portal"
+        description: "Successfully logged in to Luanda Future Montessori Portal"
       });
     }
   };
@@ -59,7 +59,7 @@ const LoginPage: React.FC = () => {
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-green-light/5 rounded-full blur-2xl"></div>
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-red-light/5 rounded-full blur-2xl"></div>
 
       {/* Floating Elements */}
       <div className="absolute top-20 right-20 animate-float hidden lg:block">
@@ -85,16 +85,16 @@ const LoginPage: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-secondary/30 rounded-full blur-lg animate-pulse-slow"></div>
               <img 
-                src={crescentLogo} 
-                alt="Crescent School Logo" 
+                src={luandaLogo} 
+                alt="Luanda Future Montessori Logo" 
                 className="relative w-14 h-14 object-contain rounded-full border-2 border-secondary shadow-gold"
               />
             </div>
             <div className="text-center">
               <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                Crescent School
+                Luanda Future Montessori
               </h1>
-              <p className="text-sm text-muted-foreground mt-1">Excellence in Education</p>
+              <p className="text-sm text-muted-foreground mt-1">Rigor, Quality and Excellence</p>
             </div>
           </div>
         </div>
@@ -110,8 +110,8 @@ const LoginPage: React.FC = () => {
               <div className="relative">
                 <div className="mx-auto w-24 h-24 rounded-full bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center mb-4 border border-primary-foreground/20">
                   <img 
-                    src={crescentLogo} 
-                    alt="Crescent School" 
+                    src={luandaLogo} 
+                    alt="Luanda Future Montessori" 
                     className="w-16 h-16 object-contain rounded-full"
                   />
                 </div>
@@ -209,8 +209,8 @@ const LoginPage: React.FC = () => {
                     <p className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Teacher</p>
                   </div>
                   <div className="group text-center">
-                    <div className="w-14 h-14 mx-auto rounded-2xl bg-green-light/10 flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-green-light group-hover:shadow-lg group-hover:scale-110">
-                      <GraduationCap className="w-6 h-6 text-green-light group-hover:text-primary-foreground transition-colors" />
+                    <div className="w-14 h-14 mx-auto rounded-2xl bg-red-light/10 flex items-center justify-center mb-2 transition-all duration-300 group-hover:bg-red-light group-hover:shadow-lg group-hover:scale-110">
+                      <GraduationCap className="w-6 h-6 text-red-light group-hover:text-primary-foreground transition-colors" />
                     </div>
                     <p className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Student</p>
                   </div>
@@ -232,7 +232,7 @@ const LoginPage: React.FC = () => {
       <footer className="relative z-10 py-6 border-t border-border/50 bg-card/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Crescent School. All rights reserved.
+            © {new Date().getFullYear()} Luanda Future Montessori. All rights reserved.
           </p>
         </div>
       </footer>
