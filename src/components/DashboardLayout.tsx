@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
-import luandaLogo from '@/assets/luanda-logo.jpg';
+import luandaLogo from '@/assets/luanda-logo.png';
 import { 
   LogOut, 
   Home, 

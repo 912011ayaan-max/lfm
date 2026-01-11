@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { initializeAdmin } from '@/lib/firebase';
-import luandaLogo from '@/assets/luanda-logo.jpg';
+import luandaLogo from '@/assets/luanda-logo.png';
 import { User, GraduationCap, Shield, Eye, EyeOff, Sparkles, BookOpen, Users } from 'lucide-react';
 
 const LoginPage: React.FC = () => {
