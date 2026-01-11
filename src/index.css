@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Luanda Future Montessori Theme - Red, Yellow, Black - Balanced Angolan Colors */
+    /* Luanda Future Montessori Theme - Red, Yellow, Black - Subtle Angolan Colors */
     --background: 48 30% 97%;
     --foreground: 0 0% 18%;
 
@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 18%;
 
-    --primary: 0 65% 45%;
+    --primary: 0 30% 45%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 43 85% 52%;
@@ -42,7 +42,7 @@
 
     --border: 0 8% 88%;
     --input: 0 8% 88%;
-    --ring: 0 65% 45%;
+    --ring: 0 30% 45%;
 
     --radius: 1rem;
 
@@ -50,40 +50,40 @@
     --gold: 43 85% 52%;
     --gold-light: 43 75% 72%;
     --gold-dark: 43 90% 38%;
-    --red-dark: 0 65% 35%;
-    --red-light: 0 65% 52%;
+    --red-dark: 0 30% 35%;
+    --red-light: 0 30% 52%;
     --cream: 48 30% 97%;
-    --crimson: 0 65% 45%;
+    --crimson: 0 30% 45%;
 
     /* Glass Effects */
     --glass-bg: 0 0% 100% / 0.7;
     --glass-border: 0 0% 100% / 0.3;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 65% 45%) 0%, hsl(0 65% 35%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 30% 45%) 0%, hsl(0 30% 35%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(43 95% 58%) 0%, hsl(43 85% 52%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(48 30% 97%) 0%, hsl(48 25% 93%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(48 30% 97%) 100%);
-    --gradient-success: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(0 65% 45%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(43 85% 52%) 0%, hsl(0 65% 52%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(0 30% 45%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(43 85% 52%) 0%, hsl(0 30% 52%) 100%);
 
     /* Shadows */
-    --shadow-xs: 0 1px 2px hsl(0 65% 45% / 0.04);
-    --shadow-sm: 0 2px 8px hsl(0 65% 45% / 0.06);
-    --shadow-md: 0 4px 16px hsl(0 65% 45% / 0.08);
-    --shadow-lg: 0 8px 32px hsl(0 65% 45% / 0.12);
-    --shadow-xl: 0 16px 48px hsl(0 65% 45% / 0.16);
+    --shadow-xs: 0 1px 2px hsl(0 30% 45% / 0.04);
+    --shadow-sm: 0 2px 8px hsl(0 30% 45% / 0.06);
+    --shadow-md: 0 4px 16px hsl(0 30% 45% / 0.08);
+    --shadow-lg: 0 8px 32px hsl(0 30% 45% / 0.12);
+    --shadow-xl: 0 16px 48px hsl(0 30% 45% / 0.16);
     --shadow-gold: 0 4px 24px hsl(43 85% 52% / 0.35);
-    --shadow-glow: 0 0 40px hsl(0 65% 45% / 0.15);
-    --shadow-inner: inset 0 2px 4px hsl(0 65% 45% / 0.06);
+    --shadow-glow: 0 0 40px hsl(0 30% 45% / 0.15);
+    --shadow-inner: inset 0 2px 4px hsl(0 30% 45% / 0.06);
 
-    --sidebar-background: 0 65% 45%;
+    --sidebar-background: 0 30% 45%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 43 85% 52%;
     --sidebar-primary-foreground: 0 0% 18%;
-    --sidebar-accent: 0 65% 38%;
+    --sidebar-accent: 0 30% 38%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 65% 38%;
+    --sidebar-border: 0 30% 38%;
     --sidebar-ring: 43 85% 52%;
   }
 
@@ -195,7 +195,7 @@
   .btn-gradient::before {
     content: '';
     @apply absolute inset-0 opacity-0 transition-opacity duration-300;
-    background: linear-gradient(135deg, hsl(0 65% 35%) 0%, hsl(0 65% 45%) 100%);
+    background: linear-gradient(135deg, hsl(0 30% 35%) 0%, hsl(0 30% 45%) 100%);
   }
 
   .btn-gradient:hover::before {
@@ -322,7 +322,7 @@
   }
 
   .text-gradient-primary {
-    background: linear-gradient(135deg, hsl(0 65% 45%) 0%, hsl(0 65% 52%) 100%);
+    background: linear-gradient(135deg, hsl(0 30% 45%) 0%, hsl(0 30% 52%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

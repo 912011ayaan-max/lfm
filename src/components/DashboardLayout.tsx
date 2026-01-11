@@ -129,7 +129,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, currentPage
             <img 
               src={luandaLogo} 
               alt="Luanda Future Montessori" 
-              className="relative w-10 h-10 object-contain rounded-full border-2 border-secondary"
+              className="relative w-12 h-12 object-contain rounded-lg"
             />
           </div>
           <div>
@@ -223,7 +223,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, currentPage
                 <img 
                   src={luandaLogo} 
                   alt="Luanda Future Montessori" 
-                  className="relative w-12 h-12 object-contain rounded-full border-2 border-secondary shadow-gold"
+                  className="relative w-14 h-14 object-contain rounded-lg"
                 />
               </div>
               {!sidebarCollapsed && (

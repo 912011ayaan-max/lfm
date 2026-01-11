@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, get, push, update, remove, onValue } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDSJaM56A0u41pihlc19zf-kIUtPJ7V618",
-  authDomain: "sysss-35c0b.firebaseapp.com",
-  databaseURL: "https://sysss-35c0b-default-rtdb.firebaseio.com",
-  projectId: "sysss-35c0b",
-  storageBucket: "sysss-35c0b.firebasestorage.app",
-  messagingSenderId: "1060568174124",
-  appId: "1:1060568174124:web:b5bc2ec7f6d08f7f818b89",
-  measurementId: "G-YMBL7JNNR7"
+  apiKey: "AIzaSyBLSSjDix_ZVS2WUUg3mNUWZbtAuRCjVY8",
+  authDomain: "lfmmm-145a3.firebaseapp.com",
+  databaseURL: "https://lfmmm-145a3-default-rtdb.firebaseio.com",
+  projectId: "lfmmm-145a3",
+  storageBucket: "lfmmm-145a3.firebasestorage.app",
+  messagingSenderId: "834943636458",
+  appId: "1:834943636458:web:94484952c2a8343a7b5893",
+  measurementId: "G-6XMHGBY6VJ"
 };
 
 const app = initializeApp(firebaseConfig);

@@ -87,7 +87,7 @@ const LoginPage: React.FC = () => {
               <img 
                 src={luandaLogo} 
                 alt="Luanda Future Montessori Logo" 
-                className="relative w-14 h-14 object-contain rounded-full border-2 border-secondary shadow-gold"
+                className="relative w-16 h-16 object-contain rounded-lg"
               />
             </div>
             <div className="text-center">
@@ -108,11 +108,11 @@ const LoginPage: React.FC = () => {
             <div className="bg-gradient-primary p-8 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgY3g9IjMwIiBjeT0iMzAiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvZz48L3N2Zz4=')] opacity-50"></div>
               <div className="relative">
-                <div className="mx-auto w-24 h-24 rounded-full bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center mb-4 border border-primary-foreground/20">
+                <div className="mx-auto w-28 h-28 rounded-lg bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center mb-4 border border-primary-foreground/20 p-2">
                   <img 
                     src={luandaLogo} 
                     alt="Luanda Future Montessori" 
-                    className="w-16 h-16 object-contain rounded-full"
+                    className="w-full h-full object-contain rounded-lg"
                   />
                 </div>
                 <h2 className="text-2xl font-display font-bold text-primary-foreground">
