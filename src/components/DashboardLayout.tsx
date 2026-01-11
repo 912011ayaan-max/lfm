@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
-import crescentLogo from '@/assets/crescent-logo.jpg';
+import schoolLogo from '@/assets/luanda-logo.jpg';
 import { 
   LogOut, 
   Home, 
@@ -127,14 +127,14 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, currentPage
           <div className="relative">
             <div className="absolute inset-0 bg-secondary/30 rounded-full blur-md"></div>
             <img 
-              src={crescentLogo} 
-              alt="Crescent School" 
+              src={schoolLogo} 
+              alt="Luanda Future Montessori" 
               className="relative w-10 h-10 object-contain rounded-full border-2 border-secondary"
             />
           </div>
           <div>
-            <h1 className="font-display font-bold text-lg text-foreground">Crescent</h1>
-            <p className="text-xs text-muted-foreground">School Portal</p>
+            <h1 className="font-display font-bold text-lg text-foreground">Luanda Future</h1>
+            <p className="text-xs text-muted-foreground">Montessori Portal</p>
           </div>
         </div>
         <Button 
@@ -221,17 +221,17 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, currentPage
               <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 bg-secondary/40 rounded-full blur-md"></div>
                 <img 
-                  src={crescentLogo} 
-                  alt="Crescent School" 
+                  src={schoolLogo} 
+                  alt="Luanda Future Montessori" 
                   className="relative w-12 h-12 object-contain rounded-full border-2 border-secondary shadow-gold"
                 />
               </div>
               {!sidebarCollapsed && (
                 <div className="animate-fade-in">
                   <h1 className="font-display font-bold text-xl text-sidebar-foreground leading-tight">
-                    Crescent
+                    Luanda Future
                   </h1>
-                  <p className="text-xs text-sidebar-foreground/60">School Portal</p>
+                  <p className="text-xs text-sidebar-foreground/60">Montessori Portal</p>
                 </div>
               )}
             </div>
